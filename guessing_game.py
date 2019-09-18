@@ -28,6 +28,7 @@ def start_game():
           num_guesses += 1
           print("That number is too low, lets try a higher number")
         elif guess == random_number:
+          num_guesses += 1
           print("Thats correct, you guessed the right number!")
           print("you guessed in {} tries!".format(num_guesses))
           try_again = (input("Would you like to try again? Y/N  "))
